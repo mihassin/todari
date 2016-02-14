@@ -2,9 +2,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import simps
 
+#Simple poly-function
 def f2(x):
 	return (1/36)*(9 - np.power(x,2))
 
+'''
+Image for f2 function, with the expection:
+
+f(x) = { (1/36)*(9 - np.power(x,2)), when abs(x) < 3
+       { 0, otherwise
+'''
 def t_6a():
 	t = np.arange(-3.0,3.1,0.1)
 	y = np.zeros(np.shape(t))
@@ -21,17 +28,17 @@ def t_6a():
 	plt.xlim(-3.9,3.9)
 	plt.show()
 
+#Integral value for f2 from -1 to 1
 def t_6b():
 	x = np.array([-1,0,1])
 	y1 = f2(x)
 	I1 = simps(y1,x)
 	print(I1)
 
+#Probability density function with lambda := lm and variable x
 def exp_dist_f(lm,x):
 	return lm*np.e**(-lm*x)
 
+#PDF exp_dist_f integrate from k to k+1
 def exp_dist_int_len1(lm,x):
 	return (np.e**(-lm*x))*(1-np.e**(-lm))
-
-def t_7c(x):
- return "asd"
