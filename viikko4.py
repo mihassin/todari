@@ -8,7 +8,7 @@ def f2(x):
 def t_6a():
 	t = np.arange(-3.0,3.1,0.1)
 	y = np.zeros(np.shape(t))
-    #xplus = np.arange(3.0,4.0,0.1)
+    xplus = np.arange(3.0,4.0,0.1)
 	xminus = -xplus
 	x = np.zeros(np.shape(xplus))
 
