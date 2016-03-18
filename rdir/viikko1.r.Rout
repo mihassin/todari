@@ -1,0 +1,63 @@
+
+R version 3.0.2 (2013-09-25) -- "Frisbee Sailing"
+Copyright (C) 2013 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> ##########################################
+> # Viikko 1                               #
+> # Tilastollinen päättely R-ohjelmistolla #
+> ##########################################
+> 
+> # Tehtävä 1
+> 
+> # a
+> a <- 5 + 12
+> a
+[1] 17
+> 
+> # b
+> a <- a * 3
+> a
+[1] 51
+> 
+> # c
+> b <- a ** 3
+> b
+[1] 132651
+> 
+> # d
+> d <- log(b)
+> d
+[1] 11.79548
+> 
+> # e
+> d <- d ** (1/3)
+> d
+[1] 2.276347
+> 
+> # f
+> e <- cos(d)
+> e
+[1] -0.6484533
+> 
+> #g
+> a+b+d+e
+[1] 132703.6
+> 
+> proc.time()
+   user  system elapsed 
+  0.189   0.031   0.222 
