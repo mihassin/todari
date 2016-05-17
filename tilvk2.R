@@ -1,0 +1,10 @@
+x <- seq(0,6,by=0.001)
+png(filename="vk2t2.png")
+plot(x, 1/x, main="Uskottavuusfunktio", xlab=expression(paste(theta)), ylab=expression(plain("L(")~theta~plain(")")), xlim=c(0,5), ylim=c(0,10), type="line",col="red")
+lines(x,1/x**2, col="orange")
+lines(x,1/x**3, col="yellow")
+lines(x,1/x**4, col="green")
+lines(x,1/x**5, col="blue")
+lines(x,1/x**6, col="purple")
+dev.off()
+
